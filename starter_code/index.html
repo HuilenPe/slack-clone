@@ -11,17 +11,20 @@
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="./stylesheets/navbar.css">
+  <link rel="stylesheet" href="./stylesheets/header.css">
+  <link rel="stylesheet" href="./stylesheets/main.css">
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
 </head>
 
 <body>
-  <nav>
-    <div>
+  <nav >
+    <div class="menu-logo">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="list">
         <li>
           <a href="#">Product</a>
         </li>
@@ -37,20 +40,20 @@
       </ul>
     </div>
 
-    <div>
-      <button>
+    <div class="menu-container">
+      <button class="search">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="btn-menu-icon">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
-        <li>
+      <ul hidden class="icon-list">
+        <li class="sign">
           <a href="#">Sign in</a>
         </li>
-        <li>
+        <li class="try">
           <a href="#">Try for free</a>
         </li>
       </ul>
@@ -61,12 +64,12 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p> <span>Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="btns">
+        <button class="btn-container">Sign up with email</button>
 
-        <button>
+        <button class="btn-google">
           <img src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
@@ -81,71 +84,72 @@
 
   <main>
     <section>
-      <p>Trusted by companies all over the world</p>
+      <p class="title" >Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="companies">
+        <img src="./images/logo-airbnb.png" class="companies-logo" alt="Airbnb logo" />
+        <img src="./images/logo-nasa.png" class="companies-logo" alt="NASA logo" />
+        <img src="./images/logo-uber.png" class="companies-logo" alt="Uber logo" />
+        <img src="./images/logo-target.png" class="companies-logo" alt="Target logo" />
+        <img src="./images/logo-nyt.png" class="companies-logo" alt="New York Times logo" />
+        <img src="./images/logo-spotify.png" class="companies-logo" alt="Spotify logo" />
       </div>
-
+ 
     </section>
 
-    <section>
-      <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
+    <section class="section-container">
+      <div class="section-image">
+        <img src="./images/connectedness.png" alt="connectedness" />
       </div>
 
-      <div>
+      <div class="section-content">
         <h2>Bring your team together</h2>
 
-        <p>
+        <p class="paragraph" >
           At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In
           channels, it's easier to connect across departments, offices, time zones and even other companies.
         </p>
 
         <a href="#">
-          <span>Learn more about channels</span>
+          <span class="learn" >Learn more about channels</span>
         </a>
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="section-container">
+      <div class="section-content">
         <h2>Choose how you want to work</h2>
-        <p>
-          In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
+        <p class="paragraph">
+          In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. <br>
+           You can easily chat,
           send
           audio and video clips, or hop on a huddle to talk things out live.
         </p>
 
         <a href="#">
-          <span>Learn more about flexible communication</span>
+          <span class="learn">Learn more about flexible communication</span>
         </a>
       </div>
 
-      <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+      <div class="section-image-right">
+        <img src="./images/flexibility.png" alt="flexibility" />
       </div>
     </section>
 
-    <section>
-      <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
+    <section class="section-container">
+      <div class="section-image">
+        <img src="./images/speed.png" alt="speed" />
       </div>
 
-      <div>
+      <div class="section-content">
         <h2>Move faster with your tools in one place</h2>
-        <p>
+        <p class="paragraph">
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
           tools like Workflow Builder, you can automate away routine tasks.
         </p>
 
         <a href="#">
-          <span>Learn more about the Slack platform</span>
+          <span class="learn" >Learn more about the Slack platform</span>
         </a>
       </div>
     </section>

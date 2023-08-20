@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #540b51;
+}
+h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: 700;
+    margin: 8%;
+}
+p {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 8%;
+    padding-right: 12%;
+}
+p span {
+    color: #ecb12f;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.btns {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;  
+}
+.btn-container,
+.btn-google {
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    flex: 1; 
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    height: 50px;
+}
+.btn-container {
+    background-color: white;
+    color: #540b51;
+}
+.btn-google {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-google img {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+img[alt="Slack app screenshot"]{
+    width: 100%;
+    height: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+@media (min-width: 769px) {
+  header {
+    flex-direction: row; 
+    align-items: right;
+  }
+
+  .btns {
+    flex-direction: row; 
+    gap: 1em;
+    padding-bottom: 5%;
+    margin-left: 10%;
+  }
+
+  .btn-google img {
+    margin-left: -5%;
+    margin-right: 15%;
+    }
+
+  img[alt="Slack app screenshot"] {
+    max-width: 85%;
+    margin-top: 14%; 
+    margin-bottom: 5%;
+  }
+
+  h1 {
+    width: 90%;
+    font-size: 5em; 
+    font-weight: 600;
+    margin-left: 10%;
+  }
+
+  p {
+    font-size: 1.5em;
+    padding-right: 15%; 
+    margin-left: 10%;
+  }
+}
