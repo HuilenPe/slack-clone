@@ -8,11 +8,11 @@ nav {
     justify-content: space-between;
     height: 20%;
 }
-nav ul{
+.list-choise{
     display: none;
 }
 img[alt="Slack logo"]{
-    width: 30%;
+    width: 25%;
 }
 img[alt="Search icon"]{
     width: 100%;
