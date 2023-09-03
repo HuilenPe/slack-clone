@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./stylesheets/navbar.css">
   <link rel="stylesheet" href="./stylesheets/header.css">
   <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="./stylesheets/footer.css">
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -98,11 +99,11 @@
 
     <section class="section-container">
       <div class="section-image">
-        <img src="./images/connectedness.png" alt="connectedness" />
+        <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
       <div class="section-content">
-        <h2>Bring your team together</h2>
+        <h2 class="h2-title">Bring your team together</h2>
 
         <p class="paragraph" >
           At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In
@@ -111,13 +112,19 @@
 
         <a href="#">
           <span class="learn" >Learn more about channels</span>
+          <img src="./images/icon-arrow-right.png" alt="arrow">
         </a>
       </div>
     </section>
 
     <section class="section-container">
+      <div class="section-image-right">
+        <div class="image-container">
+        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+        </div>
+      </div>
       <div class="section-content to-right">
-        <h2>Choose how you want to work</h2>
+        <h2 class="h2-title">Choose how you want to work</h2>
         <p class="paragraph">
           In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. <br>
            You can easily chat,
@@ -126,37 +133,33 @@
         </p>
 
         <a href="#">
-          <span class="learn">Learn more about flexible communication</span>
+          <span class="learn">Learn more about flexible communication</span> <img src="./images/icon-arrow-right.png" alt="arrow">
         </a>
-      </div>
-
-      <div class="section-image-right">
-        <img src="./images/flexibility.png" alt="flexibility" />
       </div>
     </section>
 
     <section class="section-container">
       <div class="section-image">
-        <img src="./images/speed.png" alt="speed" />
+        <img src="./images/speed-mobile.png" alt="speed" />
       </div>
 
       <div class="section-content">
-        <h2>Move faster with your tools in one place</h2>
+        <h2 class="h2-title">Move faster with your tools in one place</h2>
         <p class="paragraph">
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
           tools like Workflow Builder, you can automate away routine tasks.
         </p>
 
         <a href="#">
-          <span class="learn" >Learn more about the Slack platform</span>
+          <span class="learn" >Learn more about the Slack platform</span> <img src="./images/icon-arrow-right.png" alt="arrow">
         </a>
       </div>
     </section>
 
 
     <section class="white-section">
-      <h3>Teams large and small rely on Slack</h3>
-      <p id="wiht-p" >Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+      <h3 class="h3-teams">Teams large and small rely on Slack</h3>
+      <p id="slack-securely" >Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
       <div class="button-container">
         <button class="button" id="meet" >Meet Slack for enterprise</button>
@@ -166,41 +169,42 @@
       <ul class="porcentajes">
         <li class="porcentajes-dto">
           <p><span id="number">85%</span></p>
-          <p id="left" >
-            of users say Slack has improved communication
-            <sup>*</sup>
+          <p class="percentage-text">
+            of users say Slack has improved communication*
           </p>
         </li>
 
         <li class="porcentajes-dto">
           <p><span id="number">86%</span></p>
-          <p id="left">
-            feel their ability to work remotely has improved has improved
-            <sup>*</sup>
+          <p class="percentage-text">
+            feel their ability to work remotely has improved has improved*
           </p>
         </li>
 
         <li class="porcentajes-dto">
           <p><span id="number" >88%</span></p>
-          <p id="left">
+          <p class="percentage-text">
             feel more connected to their teams*
-            <sup>*</sup>
           </p>
         </li>
       </ul>
+      <div>
+        <p  class="weighted-average">
+          *Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., Australia and Canada with a <span class="plus">+</span> 2% margin of error at 95% CI (August 2020)
+        </p>
+      </div>
     </section>
 
     <section class="purple-section">
-      <h3>Welcome to your new digital HQ</h3>
-
+      <h3 class="welcome">Welcome to your new digital HQ</h3>
       <button class="button" id="talk">Try for free</button>
-      <button class="button" id="meet-white" >Talk to sales</button>
+      <button class="button" id="meet" >Talk to sales</button>
     </section>
 
   </main>
 
   <footer>
-    <img src="./images/iso-slack.png" alt="Slacklogo" />
+    <img src="./images/iso-slack-footer.png" alt="Slacklogo-footer" />
     <div>
       <ul class="footer-class" >
         <li id="titleid">WHY SLACK?</li>
@@ -239,18 +243,18 @@
  <hr>
 
     <ul class="last" >
-      <li>Status</li>
-      <li>Privacy</li>
-      <li>Terms</li>
-      <li>Cookie Preferences</li>
-      <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+      <li class="the-end">Status</li>
+      <li class="the-end">Privacy</li>
+      <li class="the-end">Terms</li>
+      <li class="the-end">Cookie Preferences</li>
+      <li class="the-end">Contact Us</li>
+      <li class="the-end"><img src="./images/icon-region.png" alt="world"> Change Region </li> 
+      <li class="the-end download"> <img src="./images/icon-download.png" alt="icon-download"> Download Slack</li>
     </ul>
 
    
 
-    <ul class="last icons">
+    <ul class="icons">
       <li>
         <i class="fab fa-twitter"></i>
       </li>

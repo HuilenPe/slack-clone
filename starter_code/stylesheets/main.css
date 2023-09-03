@@ -3,16 +3,6 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-.companies{
-    padding-left: 8%;  
-    padding-right: 8%;
-    padding-bottom: 5%;
-    font-weight: 700;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 .title{
     font-size: 17px;
     color: #000000;
@@ -23,102 +13,96 @@ main {
     padding-top: 4%;
     text-align: center;
 }
+.companies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+}
 .companies-logo {
-    width: 20%; 
-    height: 20%;
+    width: 15%; 
+    height: 15%;
     margin: 4%;
 }
+img[alt="Airbnb logo"]{
+    width: 25%;
+    height: 25%;
+    margin: 3.5%;
+}
 img[alt="Target logo"]{
-    width: 10%;
-    height: 10%;
-    margin: 4%;
+    width: 13%;
+    height: 13%;
+    margin: 3.5%;
+}
+img[alt="New York Times logo"]{
+  width: 45%;
+    height: 45%;
+    margin: 3.5%;
+}
+img[alt="Spotify logo"]{
+  width: 30%;
+    height: 30%;
+    margin: 3.5%;
+}
+img[alt="connectedness"], 
+img[alt="speed"]{
+    width: 95%;
 }
 .section-container {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-.section-image-right{
-padding: 0;
-}
-img[alt="connectedness"], 
-img[alt="speed"]{
-    width: 90%;
-}
-img[alt="flexibility"]{
-    width: 90%;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 .section-content {
-    margin: 3% 8% 3% 8%;
+    margin: 13% 8%;
 }
-.section-content h2{
-    margin-right: 30%;
+.h2-title{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.paragraph{
+    justify-content: left;
+    color: #000000;
     margin-bottom: 3%;
+    font-size: 14px;
+    line-height: 30px;
+}
+.learn{
+    color: #2E71A6;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+img[alt="flexibility"]{
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
 .to-right{
     padding: 0%;
     margin-left:3% ;
 }
-.paragraph{
-    justify-content: left;
-    color: #000000;
-    margin: 0;
-    margin-bottom: 3%;
-    font-size: 14px;
-}
-.learn{
-    color: #2E71A6;
-    font-size: 14px;
-}
-.white-section,
-.purple-section {
-  display: inline-block;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.white-section {
-  background-color: white;
-  color: black;
-}
-
-.purple-section {
-  background-color: #540b51;
-  color: white;
+.h3-teams{
+  margin: 15px;
+  padding-top: 60px;
+  font-size: 2.2em;
   text-align: center;
 }
-h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
-   letter-spacing: 1px;
-
-}
-#wiht-p {
+#slack-securely{
   display: flex;
   justify-content: center;
-  font-size: 11px;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 600;
   margin-bottom: 15px;
+  margin-top: 25px;
 }
 .button-container {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-bottom: 15px;
-}
-#meet, #talk{
-    text-transform: uppercase;
-    font-size: 12px;
-  border: 1px solid #540B51;
-}
-#talk{
-  background: white;
-  color: #540B51;
-}
-#meet-white{
-  border: 1px solid white;
 }
 .button{
   background-color: #540B51;
@@ -126,80 +110,97 @@ h3 {
   border: none;
   padding: 10px 20px;
   margin-right: 10px;
+  margin-bottom: 15px;
   cursor: pointer;
+}
+#meet, #talk{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px;
+  border: 2px solid #540B51;
+  border-radius: 4px;
+}
+#talk{
+  background: white;
+  color: #540B51;
 }
 .porcentajes{  
   display: flex;
+  flex-direction: column;
   justify-content: center; 
+  text-align: center;
   list-style: none; 
-  
-}
-.porcentajes-dto{
-  display: flex; 
-  flex-direction: column; 
-  margin: 20px 20px; 
+  margin-top: 50px;
 }
 #number{
-  font-size: 45px;
+  font-size: 50px;
   color: #540b51;
-  font-weight:500;
+  font-weight:700;
 }
-#left{
-  text-align: left;
-  font-size: 14px;
-  padding-right: 5%;
+.percentage-text{
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 6%;
 }
-img[alt="Slacklogo" ]{
-  width: 5%;
-  height: 5%;
-  margin-bottom: 3%;
+.weighted-average{
+  text-align: center;
+  color:#bababa;
+  margin-bottom: 25px;
+  margin-left: 4.45%;
+  margin-right: 4.45%;
+  font-size: 15px;
 }
-footer {
+.plus{
+  color:#bababa;
+  text-decoration:underline;
+  font-size: 13px;
+}
+
+.white-section,
+.purple-section {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.white-section {
   background-color: white;
   color: black;
-  padding: 20px 0;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 10px;
 }
-footer > div {
+.welcome{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+}
+#meet{
+  border: 2px solid white;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.purple-section {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-direction: column;
+  background-color: #540b51;
+  color: white;
+  text-align: center;
+  padding-bottom: 2.5em;
 }
-.footer-class {
-  list-style: none;
-  padding: 0;
-}
-#titleid {
-  margin: 8px 0;
-  font-weight: bold;
-}
-#listid{
-  color: #454245;
-}
-hr {
-  border: none;
-  border-top: 1px solid rgb(185, 185, 185);
-  margin: 20px 0;
-}
-small {
-  display: block;
-  margin-top: 20px;
-}
-.last{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 8px;
-    margin-bottom: 20px;
-}
-.icons{
-    justify-content: space-between;
-    width: 20%;
-}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 769px) {
   .title{
     font-size: 16px;
@@ -238,14 +239,6 @@ small {
 }
   .paragraph{
     font-size: 18px;
-
-}
-  .learn{
-    color: #2E71A6;
-    font-size: 16px;
-}
-  .section-content h2{
-    font-size: 38px;
 
 }
   .to-right{
