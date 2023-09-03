@@ -1,97 +1,107 @@
 nav {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    justify-content: center; 
+    text-align: center;
     width: 100%;
     background-color: #540b51;
-    align-items: center;
-    padding: 5% 6% 5%;
-    justify-content: space-between;
-    height: 20%;
+    padding: 5% 6%;
+}
+.menu-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .list-choise{
     display: none;
 }
+ul.list-choise li {
+  margin-top: 10px;
+} 
 img[alt="Slack logo"]{
-    width: 25%;
-}
-img[alt="Search icon"]{
-    width: 100%;
-    margin-top: 11%;
-}
-.search{
-    background-color: #540b51;
-    border: none;    
+    width: 40%;
 }
 .menu-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 15%; 
+  display: flex;
+    margin: 0;
+    padding: 0;
 }
 .btn-menu-icon{
     background-color: #540b51;
+    color: white;
     border: none;
+    z-index: 999; 
 }
 img[alt="Menu icon"]{
-    width: 120%;
-    margin-top: 11%;
+    width: 25px;
+    margin-top: 0%;
+}
+.icon-list {
+  display: none;
+}
+.search{  
+  all: initial; 
+  padding: 15px;
 }
 
 @media (min-width: 769px) {
-    .btn-menu-icon {
-        display: none;
-    }
-    img[alt="Slack logo"]{
-        width: 18%;
-        margin-right: 8%;
-    }
-    .menu-logo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+   nav {
+    flex-direction: row;
+    padding: 2% 3%;
+  }
 
-    nav{
-        padding: 2% 3% 2%;
-    }
-    nav .list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 60%;
-    }
-    .menu-logo ul li a{
-        margin-left: 1px;
-        color: white;
-        font-weight: 600;
-    }
-    .menu-container{
-        width: 50%;
-    }
-    div .icon-list{
-        display: flex;
-        width: 50%;
-        margin: 0;
-        padding: 0;
-    }
-    .menu-container .sign a{
-        color: white;
-        font-weight: 600;
-    }
-    .sign{
-        font-size: 15px;
-        padding-top: 6%;
-    }
-    .try{
-        background-color: white;
-        border-radius: 3px;
-        width: 70%;
-        
-    }
-    .try a{
-        color: #540b51;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
+  img[alt="Slack logo"] {
+    width: 18%;
+    margin-right: 8px;
+  }
+
+  .menu-logo {
+    display: flex;
+  }
+
+  .list-choise {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list-choise li {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .menu-container {
+    width: 50%;
+  }
+
+  .btn-menu-icon {
+    display: none;
+  }
+
+  .icon-list {
+    display: flex;
+    width: 50%;
+  }
+
+  .menu-container .sign a {
+    color: white;
+    font-weight: 600;
+  }
+
+  .sign {
+    font-size: 15px;
+    padding-top: 6%;
+  }
+
+  .try {
+    background-color: white;
+    border-radius: 3px;
+    width: 70%;
+  }
+
+  .try a {
+    color: #540b51;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
 }
