@@ -3,6 +3,7 @@ nav {
     flex-direction:row;
     justify-content: center; 
     text-align: center;
+    align-items: center;
     width: 100%;
     background-color: #540b51;
     padding: 5% 6%;
@@ -15,9 +16,6 @@ nav {
 .list-choise{
     display: none;
 }
-ul.list-choise li {
-  margin-top: 10px;
-} 
 img[alt="Slack logo"]{
     width: 40%;
 }
@@ -46,6 +44,7 @@ img[alt="Menu icon"]{
 
 @media (min-width: 769px) {
    nav {
+    display: flex;
     flex-direction: row;
     padding: 2% 3%;
   }
@@ -59,18 +58,27 @@ img[alt="Menu icon"]{
     display: flex;
   }
 
-  .list-choise {
+  ul.list-choise {
     display: flex;
     flex-direction: row;
+      text-align: center; 
   }
 
-  .list-choise li {
-    margin-top: 0;
-    margin-left: 10px;
+  .list-choise li a {
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
   }
+  .list-choise li.try {
+    padding-left: 5px;
+  padding-right: 5px;
+}
 
   .menu-container {
-    width: 50%;
+    width: auto; 
+    margin-left: auto; 
+    display: flex;
+    text-align: center;
   }
 
   .btn-menu-icon {
@@ -83,25 +91,39 @@ img[alt="Menu icon"]{
   }
 
   .menu-container .sign a {
+  
     color: white;
     font-weight: 600;
   }
-
-  .sign {
-    font-size: 15px;
-    padding-top: 6%;
-  }
-
+  .search,
+  .sign,
   .try {
-    background-color: white;
-    border-radius: 3px;
-    width: 70%;
-  }
+    margin-left: 17px; 
+  } 
+  .sign {
+  font-size: 17px;
+  white-space: nowrap; 
+  padding-top: 16px;
+}
 
-  .try a {
-    color: #540b51;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 13px;
-  }
+.try {
+  background-color: white;
+  border-radius: 3px;
+  width: auto;
+  white-space: nowrap;
+  padding: 10px 20px;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  height: auto; 
+  line-height: 1;
+}
+
+.try a {
+  color: #540b51;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
 }
