@@ -79,29 +79,83 @@ p span {
     margin-left: -40px; 
 }
 
-@media (min-width: 769px) {
-  header {
+@media (min-width: 768px) and (max-width: 1024px){
+    header {
     flex-direction: row; 
     align-items: right;
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
-  .btns {
-    flex-direction: row; 
-    gap: 1em;
-    padding-bottom: 5%;
+  .header-title {
+      font-size: 5.6em;
+  text-align: left;
+  margin-right: 8%;
+  padding-top: 3%;
+}
+#header-p {
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 150px;
+}
+.btns {
+padding-bottom:15% ;
+}
+.image-container {
+    overflow: hidden; 
+  }
+.image-container img {
+    width: 180%; 
+    height: auto; 
+    margin-top: 50%;
     margin-left: 10%;
-  }
+}
+}
 
-  .btn-google img {
-    margin-left: -5%;
-    margin-right: 15%;
-    }
-
-  img[alt="Slack app screenshot"] {
-    max-width: 85%;
-    margin-top: 14%; 
-    margin-bottom: 5%;
+@media (min-width: 1025px) and (max-width: 1440px) {
+    header {
+    flex-direction: row; 
+    align-items: right;
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  .header-title {
+      font-size: 6em;
+  text-align: left;
+  margin-left: 0;
+  padding-top: 3%;
+}
+#header-p {
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 250px;
+}
+  .btns {
+    flex-direction: column; 
+    gap: 1em;
+    align-items: start;
+    padding-bottom: 5%;
+    margin-left: 8%;
+  }
+.btn-container,
+.btn-google {
+    width: 75%;
+    height: 60px;
+    margin-left: 0;
+}
+.image-container {
+    overflow: hidden; 
+  }
+.image-container img {
+    width: 110%; 
+    height: auto; 
+    margin-top: 35%;
+    margin-left: 20%;
+}
+}
 
   h1 {
     width: 90%;
@@ -115,4 +169,3 @@ p span {
     padding-right: 15%; 
     margin-left: 10%;
   }
-}
