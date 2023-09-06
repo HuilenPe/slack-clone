@@ -49,6 +49,9 @@ img[alt="connectedness"],
 img[alt="speed"]{
     width: 95%;
 }
+#laptop-image{
+  display: none;
+}
 .section-container {
     display: flex;
     flex-direction: column;
@@ -78,6 +81,12 @@ img[alt="flexibility"]{
     width: 100%;
     margin-left: 10%;
     margin-bottom: 5%;
+}
+#flexibility-desktop{
+  display: none;
+}
+#speed-laptop{
+  display: none;
 }
 .to-right{
     padding: 0%;
@@ -119,7 +128,7 @@ img[alt="flexibility"]{
   font-weight: 700;
   padding: 20px;
   border: 2px solid #540B51;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 #talk{
   background: white;
@@ -193,55 +202,124 @@ img[alt="flexibility"]{
 }
 
 
-
-
-
-
-
-
-
-
-@media (min-width: 769px) {
+@media (min-width: 768px) and (max-width: 1024px){
   .title{
-    font-size: 16px;
+    font-size: 26px;
     margin-bottom: 0;
 }  
-  .companies-logo {
-    width: 7%; 
-    margin-bottom: 3%;
-  }
-  img[alt="Target logo"]{
-    width: 3.5%;
-    height: 3.5%;
-    margin-bottom: 3%;
-}
-  .section-container {
+.companies{
+    display: flex;
     flex-direction: row;
-    padding-bottom: 70px;
-  }
-
-  .section-image {
-    width: 55%;
-    margin-right: 5%; 
-  }
-    .section-image-right{
-    width: 55%;
-    margin-left: 5%;
-    margin-top: 3%;
-    margin-bottom: 3%;
     padding: 0;
-} 
-
-  .section-content {
-    flex: 1;
-    margin: 0;
-    margin-top: 3%;}
+    margin-top: 4%;
+    margin-bottom: 8%;
 }
-  .paragraph{
-    font-size: 18px;
-
+.companies-logo {
+    width: 10%; 
+    height: 10%;
+    margin: 2%;
 }
-  .to-right{
-    padding: 5%;
-    padding-right: 0;
+img[alt="Airbnb logo"]{
+    width: 15%;
+    height: 15%;
+        margin: 2%;
+}
+img[alt="Target logo"]{
+    width: 5%;
+    height: 5%;
+    margin: 2%;
+}
+img[alt="New York Times logo"]{
+  width: 20%;
+    height: 20%;
+        margin: 2%;
+}
+img[alt="Spotify logo"]{
+  width: 15%;
+    height: 15%;
+        margin: 2%;
+}
+.section-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
+  #mobile-image{
+    display: none;
+  }
+  #laptop-image{
+    display: flex;
+}
+.section-image {
+  width: 90%;
+}
+.section-image-right{
+  width: 55%;
+  margin-left: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 0;
+} 
+.section-content {
+  flex: 1;
+  margin: 15%;
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+#speed-laptop{
+  display: flex;
+}
+#speed-mobile{
+  display: none;
+}
+.paragraph{
+  font-size: 21px;
+}
+.learn{
+  font-size: 21px;
+  letter-spacing: 0.5px;
+}
+#flexibility-mobile{
+  display: none;
+}
+/* !!!!!arreglar */
+#flexibility-desktop{
+  border: 5px solid red;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.h2-title{
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+#slack-securely{
+  font-weight: 500;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+.button{
+  padding: 20px 60px !important;
+  margin-top: 20px;
+}
+#meet, #talk{
+  font-size: 18px;
+  font-weight: 600;
+}
+.porcentajes{  
+  display: flex;
+  flex-direction: row;
+}
+h3.welcome{
+  font-size: 3em;
+}
+.purple-section {
+  padding-left:90px;
+  padding-right:90px;
+}
+}
